@@ -13,7 +13,7 @@ class CoreDataManager {
     let context: NSManagedObjectContext
     
     init() {
-        container = NSPersistentContainer(name: "")
+        container = NSPersistentContainer(name: "PokemonGame")
         container.loadPersistentStores { description, error in
             if let error = error {
                 print("Error loading core data: \(error)")

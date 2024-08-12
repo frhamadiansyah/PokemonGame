@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7512349E2C69C44F00233ADC /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512349D2C69C44F00233ADC /* APIServiceTests.swift */; };
+		751234A12C69C48C00233ADC /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751234A02C69C48C00233ADC /* MockData.swift */; };
+		751234A42C69C4BF00233ADC /* mockPokemonList.json in Resources */ = {isa = PBXBuildFile; fileRef = 751234A22C69C4BE00233ADC /* mockPokemonList.json */; };
+		751234A52C69C4BF00233ADC /* mockPokemonDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 751234A32C69C4BF00233ADC /* mockPokemonDetail.json */; };
+		751234A82C69C4E100233ADC /* DetailVewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751234A72C69C4E100233ADC /* DetailVewModelTests.swift */; };
+		751234AA2C69C50400233ADC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751234A92C69C50400233ADC /* HomeViewModelTests.swift */; };
+		751234AC2C69C55000233ADC /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751234AB2C69C55000233ADC /* MockService.swift */; };
 		751A045D2C65C64C00CD167F /* PokemonGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A045C2C65C64C00CD167F /* PokemonGameApp.swift */; };
 		751A045F2C65C64C00CD167F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A045E2C65C64C00CD167F /* ContentView.swift */; };
 		751A04612C65C64F00CD167F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751A04602C65C64F00CD167F /* Assets.xcassets */; };
@@ -54,6 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7512349D2C69C44F00233ADC /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		751234A02C69C48C00233ADC /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		751234A22C69C4BE00233ADC /* mockPokemonList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockPokemonList.json; sourceTree = "<group>"; };
+		751234A32C69C4BF00233ADC /* mockPokemonDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockPokemonDetail.json; sourceTree = "<group>"; };
+		751234A72C69C4E100233ADC /* DetailVewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVewModelTests.swift; sourceTree = "<group>"; };
+		751234A92C69C50400233ADC /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		751234AB2C69C55000233ADC /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		751A04592C65C64C00CD167F /* PokemonGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751A045C2C65C64C00CD167F /* PokemonGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGameApp.swift; sourceTree = "<group>"; };
 		751A045E2C65C64C00CD167F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +125,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7512349F2C69C46600233ADC /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				751234A32C69C4BF00233ADC /* mockPokemonDetail.json */,
+				751234A22C69C4BE00233ADC /* mockPokemonList.json */,
+				751234A02C69C48C00233ADC /* MockData.swift */,
+				751234AB2C69C55000233ADC /* MockService.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		751234A62C69C4CC00233ADC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				751234A72C69C4E100233ADC /* DetailVewModelTests.swift */,
+				751234A92C69C50400233ADC /* HomeViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		751A04502C65C64C00CD167F = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +193,10 @@
 		751A04712C65C65000CD167F /* PokemonGameTests */ = {
 			isa = PBXGroup;
 			children = (
+				751234A62C69C4CC00233ADC /* ViewModels */,
+				7512349F2C69C46600233ADC /* MockData */,
 				751A04722C65C65000CD167F /* PokemonGameTests.swift */,
+				7512349D2C69C44F00233ADC /* APIServiceTests.swift */,
 			);
 			path = PokemonGameTests;
 			sourceTree = "<group>";
@@ -364,6 +401,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751234A52C69C4BF00233ADC /* mockPokemonDetail.json in Resources */,
+				751234A42C69C4BF00233ADC /* mockPokemonList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +449,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751234AA2C69C50400233ADC /* HomeViewModelTests.swift in Sources */,
+				7512349E2C69C44F00233ADC /* APIServiceTests.swift in Sources */,
+				751234A82C69C4E100233ADC /* DetailVewModelTests.swift in Sources */,
+				751234A12C69C48C00233ADC /* MockData.swift in Sources */,
 				751A04732C65C65000CD167F /* PokemonGameTests.swift in Sources */,
+				751234AC2C69C55000233ADC /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
